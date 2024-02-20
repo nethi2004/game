@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battleship!</title>
+    <link rel="stylesheet" href="lab01bs.css">
+    <link rel="icon" href="pink-star.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+</head>
+<body>
+    <br>
+    <br>
+    <div id="rules-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closenModal()">&times;</span> 
+            <img src="pink-star.png" width="90px">
+            <h1>GAME PLAY!</h1>
+            <h5>Here are some things you should know before playing:D </h5>
+            <p id="modal-messagep">The ships are already randomized however you can<br> move/customize any of the "ships" on the user board<br>
+            to your liking to place the battleships!<br><br>(they aren't made in groups so you can move them any<br> way you want and group which ever you want) <br><br>
+            The game starts after you make your first move on the PC board. <br><br>
+            BEWARE THO! once you start the game you can't <br>change the positions of your ships<br><br>
+            <br>
+            Goodluck girl>.<<br>
+        hope you win!<br><br> <br> </p>
+    <h5> More info of the setup :</h5>
+            <img src="game23.jpeg" width="700px">
+
+            <h5> Rules of the game :</h5>
+            <p id="modal-messagep"> There are 17 ships on each board. <br><br>
+                The player clicks at random hoping to take <br>the opponents ships down (the PC's board)<br><br>
+                You can change the placement of your ships<br> <br>When you start your turn
+                the game will automatically start! <br>
+                <br><br><br></p>
+                <img src="pink-star.png" width="90px">
+        </div>
+    </div>
+    <p class="head">B A T T L E  S H I P :D</p>
+    <div class="container">
+    <p class="minil"> User board</p>
+    <p class="minir"> PC board</p>
+    </div>
+    <div class="game-container">
+        <div id="pc-board" class="board"></div>
+        <div id="user-board" class="board" ></div>   
+    </div>
+    <p id="message"></p>
+    <div id="game-info">
+        <div id="left">
+            <p>Hits: <span id="phits-count">0</span></p>
+            <p>Misses: <span id="pmisses-count">0</span></p>
+        </div>
+        <div id="right">
+            <p>Hits: <span id="hits-count">0</span></p>
+            <p>Misses: <span id="misses-count">0</span></p>
+        </div>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <img src="cat.gif" width="350px">
+          <p id="modal-message"></p>
+        </div>
+      </div>
+    <button id="new-game-btn">New Game</button>
+    <script src="lab01bs.js"></script>
+<br>
+<br>
+<br>
+    <footer> &copy; nethara<3</footer>
+</body>
+</html>
